@@ -1,0 +1,212 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f3f2ef;
+}
+
+/* Navbar container */
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 56px;
+  background-color: #41B3A2;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 0.1);
+  z-index: 1000;
+}
+
+/* Left: logo */
+.topbar__logo {
+  display: flex;
+  align-items: center;
+  margin-right: 12px;
+  cursor: pointer;
+}
+.topbar__logo svg {
+  height: 32px;
+  width: 32px;
+  fill: white;
+}
+.topbar__logo-text {
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  margin-left: 8px;
+  user-select: none;
+}
+
+/* Center: search */
+.topbar__search {
+  flex: 1;
+  max-width: 500px;
+  position: relative;
+}
+.topbar__search input {
+  width: 100%;
+  height: 36px;
+  border-radius: 2px;
+  border: none;
+  padding: 0 12px 0 40px;
+  font-size: 14px;
+  outline: none;
+  background-color: #eef3f8;
+  color: #333;
+}
+.topbar__search svg {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  height: 18px;
+  width: 18px;
+  fill: #495057;
+}
+
+/* Right: navigation & profile */
+.topbar__nav {
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+}
+.topbar__nav-item {
+  color: #e1e9ee;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: color 0.2s;
+  user-select: none;
+}
+.topbar__nav-item:hover {
+    background-color: #BDE8CA;
+    
+  color: rgb(255, 255, 255);
+}
+.topbar__nav-icon {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 2px;
+  fill: currentColor;
+}
+.topbar__nav-text {
+  line-height: 1;
+}
+
+/* Profile avatar */
+.topbar__profile {
+  margin-left: 24px;
+  position: relative;
+  cursor: pointer;
+}
+.topbar__profile img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  transition: border-color 0.2s;
+  object-fit: cover;
+}
+.topbar__profile:hover img {
+  border-color: white;
+}
+.column {
+    
+    min-height:fit-content;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    background-color: #41B3A2;
+    margin:2%
+}
+.column1 {
+    min-height:fit-content;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 50%;
+    background-color: #41B3A2;
+}
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 55px;
+    margin-left: 2.5%;
+    margin-right: 2.5%
+    
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.contained {
+display : flex;
+justify-content: center;
+height:auto;
+}
+.column2 {
+  min-height:fit-content;
+  color: #41B3A2;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  background-color: #41B3A2;
+  margin-top: 70px;
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .topbar__search {
+    max-width: 200px;
+  }
+  .topbar__nav-item {
+    margin-left: 12px;
+    font-size: 10px;
+  }
+  .row {
+    flex-direction: column;
+    align-items: center; /* center stacked boxes */
+    }
+
+  .column {
+    width: 90%;
+    margin-bottom: 20px;
+   }
+  /* .column {
+    width: 100%;
+  } */
+
+
+}
+/* .containers {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+
+} */
+/* .container {
+    background-color: #A2D68E; /* Green */
+    /* width: 30%; */
+    /* min-height: 200px; */
+    /* border-radius: 5px; */
+/* } */ 
+
+
