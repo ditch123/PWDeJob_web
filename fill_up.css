@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+body.body-bg {
+  background-color: #41B3A2;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Container */
+.form-wrapper {
+  background-color: #f3f2ef;
+  padding: 2rem;
+  border-radius: 4px;
+  max-width: 1000px;
+  width: 100%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Header */
+.form-title {
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 1rem;
+}
+
+/* Subheading */
+.form-subtitle {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+/* Form Groups */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+
+/* Input Fields */
+.form-input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 6px 10px;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 2px rgba(74,144,226,0.2);
+}
+
+.full {
+  width: 100%;
+}
+
+.small {
+  width: 25%;
+}
+
+.medium {
+  width: 35%;
+}
+
+/* Layouts */
+.input-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.half-width {
+  width: 48%;
+}
+
+/* Checkboxes */
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.85rem;
+}
+
+/* Images */
+.image-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.image-border {
+  border: 2px solid #4a90e2;
+  padding: 0.25rem;
+  border-radius: 4px;
+}
+
+/* File Upload */
+.file-upload-area {
+  border: 2px dashed #999;
+  padding: 1.5rem;
+  text-align: center;
+  position: relative;
+  color: #555;
+  font-size: 0.85rem;
+  border-radius: 4px;
+}
+
+.file-upload-area i {
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+  display: block;
+}
+
+.file-upload-area .bold {
+  font-weight: bold;
+}
+
+.file-upload-area .small-text {
+  font-size: 0.7rem;
+  font-weight: 300;
+}
+
+.arrow-left,
+.arrow-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: #aaa;
+}
+
+.arrow-left {
+  left: 10px;
+}
+
+.arrow-right {
+  right: 10px;
+}
+
+/* Submit Button */
+.form-submit {
+  text-align: center;
+}
+
+.submit-btn {
+  background-color: #41B3A2;
+  color: white;
+  padding: 0.6rem 2rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #BDE8CA;
+}
